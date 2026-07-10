@@ -1,0 +1,11 @@
+class Solution:
+    def getCount(self, n):
+        ans = 0
+        L = 2
+        while (n - (L * (L - 1)) // 2) > 0:
+            if (n - (L * (L - 1)) // 2) % L == 0:
+                ans += 1
+            L += 1
+            
+        return ans
+        
